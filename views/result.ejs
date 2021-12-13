@@ -1,0 +1,56 @@
+<%- include('includes/head.ejs') -%>
+<title>Results</title>
+<link rel="stylesheet" href="/css/results.css">
+</head>
+<body>
+ <h1>Here are your managed tasks</h1>
+ <% if(solutions.length <= 0) { %>
+    <h1>No tasks found to arrange</h1>
+ <% } else { %>
+ <div class= "result-display">
+ <% solutions.map((solution,index) => { %>
+        <% if(solution.tasksForDay.length>0) { %>
+        <h2>Plan for : <%= index+1 %> Day </h2>
+        <div class="result-elements">
+            <!-- iterating one day of tasks  -->
+            <% for(let index = 0;index< solution.tasksForDay.length ; index++){ %>
+                Name : <span><%= solution.tasksForDay[index].name %></span>
+                Duration : <span><%= solution.tasksForDay[index].duration %></span>
+                Deadline : <span><%= solution.tasksForDay[index].deadline %></span>
+                <br>
+            <% } %>
+        </div>
+        <% } %>
+        <% }) %>
+    </div>
+    <!-- else ending  -->
+    <% } %>
+
+    <!-- checking unattended solutions -->
+    <% if(unadjusted.length <= 0) { %>
+        <div class="success-msg">
+        <h1 >All tasks arranged succesfully! Hurrayyyyyyy!!</h1>
+        </div>
+     <% } else { %>
+     <div class= "result-display incomplete-box ">
+         <h1 class="incomplete"> Following tasks could not be managed!</h1>
+         <h2 class="incomplete"> Please lookout for these by yourself</h2>
+     <% unadjusted.map((a,index) => { %>
+            <div class="result-elements">
+                    Name : <span><%= a.name %></span>
+                    <br>
+                    Duration : <span><%= a.duration %> is the unadjusted duration you should accomodate.</span>
+                    <br>
+                    Deadline : <span><%= a.deadline %></span>
+                    <br>
+            </div>
+            <% }) %>
+        </div>
+        <!-- else ending  -->
+        <% } %>
+    <div class="home-btn">
+        <a href="/">Back to home</a>
+    </div>
+
+  <%- include('includes/end.ejs')-%>
+</body>

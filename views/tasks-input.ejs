@@ -1,0 +1,13 @@
+<%- include('includes/head.ejs') -%>
+</head>
+<body>
+  <form action="/evaluations" method="post">
+    <% for(let i = 1; i <= totalItems; i++) { %>
+    <label for="task">Enter duration for task<%= i%></label>
+    <input type="number" name="task" />
+    <% } %>
+    <input type="hidden" name="totalItems" value="<%= totalItems %>" />
+    <button type="submit">Submit</button>
+  </form>
+  <%- include('includes/end.ejs')-%>
+</body>

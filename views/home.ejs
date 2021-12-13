@@ -1,0 +1,27 @@
+<%- include('includes/head.ejs') -%>
+<title>Home Page</title>
+<script src = "/js/home.js" ></script>
+</head>
+<body>
+  <h1>your personal TIME MANAGER!</h1>
+  <div class="user-form">
+    
+    <div>
+      Name :
+      <input type="text" name="name" id="name" >
+    </div>
+    <div>
+      Total tasks to arrange:
+      <input type="number" name="totalTasks" id="totalTasks" >
+    </div>
+    <div>
+      Total time available per day :
+      <input type="number" name="timePerDay" id="timePerDay" >
+    </div>
+    <button onclick="formClickHandler()">Proceed</button>
+  
+  </div>
+  <div id="tasks-form"></div>
+
+  <%- include('includes/end.ejs')-%>
+</body>

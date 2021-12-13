@@ -1,0 +1,80 @@
+.user-form {
+  /* background-color: rgb(146, 158, 150); */
+  display: flex;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 40px red;
+  box-shadow: -10px -10px 40px rgb(247, 223, 223);
+  margin-bottom: 10px;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  background-image: url("https://wallpapercave.com/wp/wp3088219.jpg");
+  color: white;
+}
+
+h1 {
+  color: white;
+  padding-top: 10px;
+  text-align: center;
+}
+form > input {
+  margin: 2px;
+}
+
+form > button {
+  /* display: block; */
+  /* margin: auto; */
+  margin-top: 10px;
+  margin-left: 50px;
+  background-color: green;
+  font-weight: bolder;
+}
+
+div {
+  margin: 0.5rem;
+}
+
+.tasks-form {
+  /* background-color: rgb(110, 106, 106);
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 0.3rem; */
+  display: flex;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 40px red;
+  box-shadow: -10px -10px 40px rgb(253, 245, 245);
+}
+
+.tasks-form > form > div > input {
+  margin: 4px;
+  border-radius: 10px;
+}
+
+.tasks-form > form > button {
+  display: inline-block;
+  margin-left: 30%;
+}
+
+button {
+  height: 25px;
+  width: 150px;
+  background-color: green;
+  font-weight: bolder;
+  color: white;
+}

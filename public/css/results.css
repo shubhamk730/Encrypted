@@ -1,0 +1,66 @@
+.result-display {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: -10px -10px 40px rgb(252, 246, 246);
+  margin-bottom: 10px;
+}
+
+.result-elements {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.incomplete {
+  color: rgb(255, 0, 0);
+}
+
+.home-btn {
+  background-color: green;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.home-btn > a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.incomplete-box {
+  background-color: rgb(250, 245, 245, 0.7);
+  padding: 0;
+  color: black;
+  padding-bottom: 20px;
+  box-shadow: -10px -10px 20px rgb(194, 189, 189);
+}
+
+.success-msg {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  background-color: rgb(255, 250, 250, 0.6);
+}
+
+.success-msg > h1 {
+  color: green;
+}
